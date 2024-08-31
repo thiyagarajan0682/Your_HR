@@ -34,18 +34,6 @@ app.post("/submit", async (req, res) => {
   const address = req.body.address;
   const email = req.body.email;
 
-  console.log(firstName);
-  console.log(middleName);
-  console.log(lastName);
-
-  console.log(course);
-  console.log(jobPreference);
-  console.log(gender);
-
-  console.log(phone);
-  console.log(address);
-  console.log(email);
-
   try {
     db.query(
       "INSERT INTO yourhr (firstname, middlename, lastname, course, job_preference, gender, contact_number, current_address, email) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)",
